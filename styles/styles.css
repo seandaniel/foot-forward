@@ -328,8 +328,8 @@ h1 {
 }
 
 .section-2 img {
-  height: 300px;
-  height: 300px;
+  width: 300px;
+  height: auto;
   margin: 0 auto 40px;
 }
 
@@ -337,22 +337,20 @@ h1 {
   .section-2 {
     padding: 80px 0; 
   }
-  .section-2 figure {
+  
+  .section-2 img {
     float: left;
     width: 310px;
     padding-left: 10px;
     /* (article height - img height) / 2 */
     padding: calc((462.517px - 300px) / 2) 0 calc((462.517px - 300px) / 2) 10px;
-  }
-
-  .section-2 img {
     margin: 0;
+    height: auto;
   }
-
   .section-2 article {
     float: right;
     width: 50%;
-    padding-left: 0;
+    padding-left: 20px;
   }
 
   .section-2 article p {
@@ -361,24 +359,17 @@ h1 {
 }
 
 @media (min-width: 1150px) {
-  .section-2 figure {
-    width: 300px;
-    padding: 0;
+
+  .section-2 img {
     /* article height */
     height: 308.333px;
     width: auto;
-  }
-
-  .section-2 figure img {
-    /* article height */
-    height: 308.333px;
-    width: 100%;
+    padding: 0;
   }
 
   .section-2 article {
-    width: 71%;
-    width: calc((100% - 300px) - 66px);
-    padding-right: 0;
+    width: 790px;
+    padding: 0;
   }
 
   .section-2 article p {
@@ -480,30 +471,65 @@ h3 {
 }
 
 .image-container {
+  display: inline-block;
   padding: 0 10px;
-  margin-bottom: 40px;
-  /* calc */
+  margin: 0 auto 40px;
+  text-align: center; 
   max-width: 750px;
 }
 
-.image-container img {
-  width: 48%;
-  float: left;
-  max-width: 350px;
-  height: auto;
+@media (min-width: 650px) {
+  .image-container {
+    margin: 0 auto 80px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .image-container {
+    margin: 0 0 80px 0;
+    padding: 0;
+    max-width: 100%;
+  }
 }
 
 .image-container img:first-child {
-  margin-right: calc(100% - (48% + 48%));
+  width: 48%;
+  float: left;
+  margin-right: calc(100% - (48% * 2));
+  max-width: 350px;
+}
+
+@media (min-width: 1150px) {
+  .image-container img:first-child {
+    /* show calculations */
+    margin-right: 40px;
+  }
+}
+
+.image-container img:nth-child(2) {
+  width: 48%;
+  float: left;
+  margin-right: 0;
+  max-width: 350px;
+}
+
+@media (min-width: 1150px) {
+  .image-container img:nth-child(2) {
+    /* show calculations */
+    margin-right: 40px;
+  }
 }
 
 .image-container img:last-child {
-  margin: 0 auto;
-  padding-top: calc(100% - (48% + 48%));
-  float: none;
-  display: block;
+  display: none;
 }
 
+@media (min-width: 1150px) {
+  .image-container img:last-child {
+    display: inline-block;
+    width: 350px;
+  }
+}
 /* footer -------------------------------------------*/
 footer {
   padding: 40px 10px 0;
