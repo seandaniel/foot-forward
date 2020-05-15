@@ -106,7 +106,7 @@ button {
 
 /* header -------------------------------------------*/
 header {
-  background: url("assets/image-1@2x.png") 33%;
+  background: url("assets/image-1.png") 33%;
   background-size: cover;
   position: relative;
   height: 550px;
@@ -397,7 +397,7 @@ h1 {
 
 /* section-3 -------------------------------------------*/
 .section-3 {
-  background: url("assets/image-5@2x.png") 22%;
+  background: url("assets/image-5.png") 22%;
   background-size: cover;
   padding: 40px 0;
   margin-bottom: 40px;
