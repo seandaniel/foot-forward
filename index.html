@@ -14,13 +14,14 @@
 </head>
 
 <body>
-
   <header>
     <div class="wrapper">
       <nav class="primary-nav">
+        <!-- mobile navigation -->
         <ul class="mobile-ul">
-          <li><button><i class="fas fa-bars"></i></button></li>
+          <li><button aria-label="Open Navigation"><i class="fas fa-bars"></i></button></li>
         </ul>
+        <!-- desktop navigation -->
         <ul class="desktop-ul">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -28,50 +29,51 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
+      <!-- desktop icons navigation -->
       <nav>
         <ul class="desktop-icons-ul">
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" aria-label="Snapchat"><i class="fab fa-snapchat-ghost"></i></a></li>
+          <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
         </ul>
       </nav>
       <h1>Foot Forward</h1>
     </div>
   </header>
-
   <main>
-    <section class="section-1 clearfix">
-      <img src="styles/assets/image-2.png" alt="">
+    <!-- quadrant section -->
+    <section class="quadrant-section clearfix">
+      <img src="styles/assets/image-2.png" alt="Over a dozen running shoes displayed on a store's wall">
       <div class="wrapper">
-        <article class="section-1-article-1">
+        <article class="quadrant-section-article-1">
           <h2>We specialize in:</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis phaaretra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.</p>
-          <button class="button">Read more</button>
+          <button class="button-styles">Read more</button>
         </article>
       </div>
-      <img src="styles/assets/image-3.png" alt="">
+      <img src="styles/assets/image-3.png" alt="A man with a white high-top shoe hovering above it">
       <div class="wrapper">
-        <article class="section-1-article-2">
+        <article class="quadrant-section-article-2">
           <h2>Foot care</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis phaaretra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.</p>
-          <button class="button">Read more</button>
+          <button class="button-styles">Read more</button>
         </article>
       </div>
     </section>
-
-    <section class="section-2 clearfix">
+    <!-- full-bleed-article-section -->
+    <section class="full-bleed-article-section clearfix">
       <div class="wrapper">
-        <img src="styles/assets/image-4.png" alt="">
+        <img src="styles/assets/image-4.png" alt="A person wearing black capris and white running shoes standing in a puddle">
         <article>
           <h2>Giving back</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla el. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend.</p>
-          <button class="button">Read more</button>
+          <button class="button-styles">Read more</button>
         </article>
       </div>
     </section>
-
-    <section class="section-3">
+    <!-- icon-navigation-section -->
+    <section class="icon-navigation-section">
         <nav>
           <ul>
             <li>
@@ -89,20 +91,18 @@
           </ul>
         </nav>
     </section>
-
-    <section class="section-4">
+    <!-- instagram-section -->
+    <section class="instagram-section">
       <div class="wrapper">
         <h2>The Gram</h2>
         <div class="image-container">
-          <img src="styles/assets/image-6.png" alt="">
-          <img src="styles/assets/image-7.png" alt="">
-          <img src="styles/assets/image-8.png" alt="">
+          <img src="styles/assets/image-6.png" alt="A close-up of a person holding a black running shoe">
+          <img src="styles/assets/image-7.png" alt="An overhead shot of someone wearing white converse standing on a piece of wood">
+          <img src="styles/assets/image-8.png" alt="A close-up of a person holding a white running shoe">
         </div>
       </div>
     </section>
-
   </main>
-
   <footer>
     <div class="wrapper">
       <div class="footer-container clearfix">
@@ -124,8 +124,8 @@
           <p>Subscribe to our newsletter to stay updated.</p>
           <form class="clearfix">
             <label class="sr-only">Email Address</label>
-            <input type="text" placeholder="email address">
-            <button type="submit" class="button">Subscribe</button>
+            <input aria-label="E-mail Address" type="text" placeholder="email address">
+            <button aria-label="Submit Form" type="submit" class="button-styles">Subscribe</button>
           </form>
         </aside>
       </div>
@@ -134,6 +134,6 @@
       <p>Copyright &copy; 2020 Juno College </p>
     </div>
   </footer>
-
 </body>
+
 </html>
