@@ -105,7 +105,7 @@
 
   <footer>
     <div class="wrapper">
-      <div class="footer-container">
+      <div class="footer-container clearfix">
         <nav>
           <ul>
             <li><a href="#">Home</a></li>
@@ -122,13 +122,15 @@
         <aside>
           <h4>Stay updated</h4>
           <p>Subscribe to our newsletter to stay updated.</p>
-          <label class="sr-only">Email Address</label>
-          <input type="text" placeholder="email address">
-          <button class="button">Subscribe</button>
+          <form class="clearfix">
+            <label class="sr-only">Email Address</label>
+            <input type="text" placeholder="email address">
+            <button type="submit" class="button">Subscribe</button>
+          </form>
         </aside>
       </div>
     </div>
-    <div>
+    <div class="copyright-container">
       <p>Copyright &copy; 2020 Juno College </p>
     </div>
   </footer>
