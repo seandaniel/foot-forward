@@ -280,7 +280,7 @@ h1 {
     padding: calc((500px - 271.183px) / 2) 10px calc((500px - 271.183px) / 2) 20px;
   }
 
-  .quadrant-section .wrapper article button {
+  .quadrant-section article button {
     margin-bottom: 0;
   }
 }
@@ -329,6 +329,10 @@ h1 {
   width: 300px;
   height: auto;
   margin: 0 auto 40px;
+}
+
+.full-bleed-article-section p {
+  text-align: left;
 }
 
 @media (min-width: 720px) {
@@ -456,17 +460,17 @@ h3 {
   color: #186684;
 }
 
-/* instagram-section -------------------------------------------*/
-.instagram-section {
+/* the-gram-section -------------------------------------------*/
+.the-gram-section {
   text-align: center;
 }
 
-.instagram-section h2 {
+.the-gram-section h2 {
   margin-bottom: 40px;
 }
 
 @media (min-width: 720px) {
-  .instagram-section h2 {
+  .the-gram-section h2 {
     margin-bottom: 80px;
   }
 }
@@ -584,7 +588,7 @@ footer {
 
 @media (min-width: 720px) {
   .footer-container aside {
-    display: inline-block;
+    float: left;
     width: 50%;
     margin-bottom: 0;
   }
@@ -636,7 +640,7 @@ address {
 
 @media (min-width: 720px) {
   .footer-container aside:last-child {
-    float: right;
+    float: left;
     width: 50%;
   }
 }
@@ -644,7 +648,6 @@ address {
 @media (min-width: 1170px) {
   .footer-container aside:last-child {
     text-align: left;
-    width: 50%;
     margin-bottom: 0;
   }
 }
@@ -667,7 +670,7 @@ input {
     font-size: 1.1rem;
     text-align: left;
     /* form width -  button width */
-    width: calc(575px - 134.983px);
+    width: calc(575px - 143.2px);
     /* button height */
     height: 46.0333px;
     margin-top: 10px;
@@ -688,7 +691,7 @@ input {
 
 @media (min-width: 1170px) {
   .footer-container aside button {
-    float: right;
+    float: left;
     width: auto;
     margin-top: 10px;
   }
