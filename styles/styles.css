@@ -272,12 +272,12 @@ h1 {
     float: right;
     width: 50%;
     /* (img height - article height) / 2 */
-    padding: calc((500px - 271.183px) / 2) 20px calc((500px - 271.183px) / 2) 10px;
+    padding: calc((500px - 270.517px) / 2) 20px calc((500px - 270.517px) / 2) 10px;
   }
 
   .quadrant-section-article-2 {
     /* opposite right and left padding from quadrant-section-article-1 */
-    padding: calc((500px - 271.183px) / 2) 10px calc((500px - 271.183px) / 2) 20px;
+    padding: calc((500px - 270.517px) / 2) 10px calc((500px - 270.517px) / 2) 20px;
   }
 
   .quadrant-section article button {
@@ -288,12 +288,12 @@ h1 {
 @media (min-width: 1170px) {
   .quadrant-section-article-1 {
     /* (img height - article height) / 2 */
-    padding: calc((500px - 280px) / 2) 60px calc((500px - 280px) / 2) 0;
+    padding: calc((500px - 279.333px) / 2) 60px calc((500px - 279.333px) / 2) 0;
   }
 
   .quadrant-section-article-2 {
     /* opposite right and left padding from quadrant-section-article-1 */
-    padding: calc((500px - 280px) / 2) 0px calc((500px - 280px) / 2) 60px;
+    padding: calc((500px - 279.333px) / 2) 0px calc((500px - 279.333px) / 2) 60px;
   }
 }
 
@@ -339,9 +339,8 @@ h1 {
   
   .full-bleed-article-section img {
     float: left;
-    margin: 0;
     /* (article height - img height) / 2 */
-    padding: calc((463.183px - 300px) / 2) 0 calc((463.183px - 300px) / 2) 10px;
+    margin: calc((462.517px - 300px) / 2) 0 calc((462.517px - 300px) / 2) 10px;
   }
   
   .full-bleed-article-section article {
@@ -361,7 +360,7 @@ h1 {
     width: auto;
     /* article height */
     height: 308.333px;
-    padding: 0;
+    margin: 0;
   }
 
   .full-bleed-article-section article {
