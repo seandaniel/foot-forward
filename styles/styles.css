@@ -494,8 +494,6 @@ h3 {
   }
 }
 
-
-/* refactor */
 .image-container img:first-child,
 .image-container img:nth-child(2) {
   float: left;
