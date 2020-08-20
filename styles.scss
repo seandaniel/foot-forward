@@ -38,7 +38,6 @@ figure {
 
 article {
   text-align: center;
-  padding: 0 10px;
 }
 
 @media (min-width: 720px) {
@@ -82,7 +81,7 @@ button {
 
 .wrapper {
   max-width: 1150px;
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -118,7 +117,7 @@ header {
 }
 
 .primary-nav {
-  padding: 10px;
+  padding: 10px 0;
   text-align: right;
 }
 
@@ -272,12 +271,12 @@ h1 {
     float: right;
     width: 50%;
     /* (img height - article height) / 2 */
-    padding: calc((500px - 270.517px) / 2) 20px calc((500px - 270.517px) / 2) 10px;
+    padding: calc((500px - 270.517px) / 2) 20px calc((500px - 270.517px) / 2) 0;
   }
 
   .quadrant-section-article-2 {
     /* opposite right and left padding from quadrant-section-article-1 */
-    padding: calc((500px - 270.517px) / 2) 10px calc((500px - 270.517px) / 2) 20px;
+    padding: calc((500px - 270.517px) / 2) 0 calc((500px - 270.517px) / 2) 20px;
   }
 
   .quadrant-section article button {
@@ -340,7 +339,7 @@ h1 {
   .full-bleed-article-section img {
     float: left;
     /* (article height - img height) / 2 */
-    margin: calc((462.517px - 300px) / 2) 0 calc((462.517px - 300px) / 2) 10px;
+    margin: calc((462.517px - 300px) / 2) 0 calc((462.517px - 300px) / 2) 0;
   }
   
   .full-bleed-article-section article {
@@ -364,7 +363,7 @@ h1 {
   }
 
   .full-bleed-article-section article {
-    width: 790px;
+    width: 780px;
     padding: 0;
   }
 
@@ -477,7 +476,6 @@ h3 {
 .image-container {
   display: inline-block;
   max-width: 750px;
-  padding: 0 10px;
   margin: 0 auto 40px;
 }
 
@@ -490,7 +488,6 @@ h3 {
 @media (min-width: 1170px) {
   .image-container {
     max-width: 100%;
-    padding: 0;
   }
 }
 
@@ -498,7 +495,7 @@ h3 {
 .image-container img:nth-child(2) {
   float: left;
   width: 48%;
-  max-width: 350px;
+  max-width: 340px;
   /* (.wrapper width - (img width * 2)) */
   margin-right: calc(100% - (48% * 2));
 }
@@ -515,13 +512,15 @@ h3 {
 @media (min-width: 1170px) {
   .image-container img:first-child,
   .image-container img:nth-child(2) {
-    /* ((.wrapper width - (img width * 3)) / 2) */
-    margin-right: calc(((1150px - (350px * 3)) / 2));
+    max-width: 32%;
+    margin-right: 2%;
   }
 
   .image-container img:last-child {
     display: inline-block;
-    width: 350px;
+    margin-right: 0;
+    width: 32%;
+    // height: auto;
   }
 }
 /* footer -------------------------------------------*/
@@ -530,12 +529,12 @@ footer {
 }
 
 .footer-container {
-  padding: 40px 10px 0;
+  padding: 40px 0;
 }
 
 @media (min-width: 720px) {
   .footer-container {
-    padding: 80px 10px;
+    padding: 80px 0;
   }
 }
 
